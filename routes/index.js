@@ -19,8 +19,11 @@ exports.index = function(req, res){
 
     //but add some logic for coin typed on the URL
     if(typeof req.params.coin != 'undefined'){
-        //TODO: Add some logic to detect only valid coins
         coin = req.params.coin;
+        if (!(coin in cointype)){
+            res.status(404).send('Crypto Currency (' + coin + ') not supported... yet');
+            throw new Error('invalid-crypto');
+        }
     }
     request(cointype[coin], function(error, response, body){
         if(!error && response.statusCode == 200){
