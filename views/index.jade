@@ -1,6 +1,9 @@
 extends layout
 
 block content
+    div(class='btn-group')
+        a(class='btn btn-info', href='/litecoin') Litecoin
+        a(class='btn btn-info', href='/bitcoin') Bitcoin 
     div(class='hero-unit', style='text-align:center')
         h1 #{coin} in USD
         hr
