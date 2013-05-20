@@ -1,0 +1,31 @@
+script 
+    // Google adsense
+    <!--
+    google_adtest = "on";
+    google_ad_client = "ca-pub-3091481762497082";
+    /* Placona, CoinConverter */
+    google_ad_slot = "7287001783";
+    google_ad_width = 970;
+    google_ad_height = 90;
+    //-->
+
+    // Google analytics
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1027425-13']);
+    _gaq.push(['_setDomainName', 'placona.co.uk']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    
+    //Google Plus    
+    (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+    
+script(type="text/javascript",src="http://pagead2.googlesyndication.com/pagead/show_ads.js")
