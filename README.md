@@ -2,6 +2,7 @@ CoinConverter - V 0.1
 =============
 
 A currency converter for crypto coins (Currently only supports USD, BTC and LTC)
+Based on [BTC-e](https://btc-e.com) Public API.
 
 ## Demo
 [CoinConverter](http://coinconverter.placona.co.uk) on Placona.co.uk
