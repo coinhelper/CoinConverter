@@ -1,0 +1,26 @@
+<<<<<<< HEAD
+/node_modules
+=======
+>>>>>>> 8080be7b9b1e364656d5c72d1464de5b7055aae8
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+<<<<<<< HEAD
+pids
+logs
+results
+npm-debug.log
+.project
+=======
+
+pids
+logs
+results
+
+npm-debug.log
+>>>>>>> 8080be7b9b1e364656d5c72d1464de5b7055aae8
