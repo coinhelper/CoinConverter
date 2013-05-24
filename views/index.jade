@@ -8,4 +8,11 @@ block content
         h1 #{coin} in USD
         hr
         div(class='input-append')
-            h2 $#{amount}
+            div(class='btn-group')
+                button(class='btn btn-info dropdown-toggle',data-toggle='dropdown')
+                    |Currency
+                    span(class='caret')
+                ul(class='dropdown-menu')
+                    li
+                        a(href='#') test
+             span(class='add-on') $#{amount}

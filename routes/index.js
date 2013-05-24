@@ -10,6 +10,10 @@ var cointype = [];
 cointype['litecoin'] = "https://btc-e.com/api/2/ltc_usd/ticker";
 cointype['bitcoin'] = "https://btc-e.com/api/2/btc_usd/ticker";
 
+var currencies = [];
+currencies.push( {name : "USD", symbol: "$"} );
+currencies.push( {name : "GBP", symbol: "£"} ); 
+
 // Intiialize the member variable amount as 0. this should get updated if everything goes well
 var usdAmount = 0;
 
@@ -33,7 +37,7 @@ exports.index = function(req, res){
         }
 
         // render view
-        res.render('index', { amount: usdAmount, coin:utils.capFirst(coin) });
+        res.render('index', { amount: usdAmount, coin:utils.capFirst(coin), currencies: currencies });
     });
 };
 
