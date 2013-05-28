@@ -13,6 +13,7 @@ block content
                     |Currency
                     span(class='caret')
                 ul(class='dropdown-menu')
-                    li
-                        a(href='#') test
+                    each currency in currencies
+                        li
+                            a(href='#') #{currency.name}
              span(class='add-on') $#{amount}
